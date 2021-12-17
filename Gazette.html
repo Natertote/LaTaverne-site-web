@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/1762b3_5540c7ee544842fba9c82aa7bb7c488d~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/Icone_carr%C3%83%C2%A9e_200x200.webp">
+</head>
+<body>
+    <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .dropdown1{
+                display: none;
+                position: absolute;
+                                              
+                border: 3px #E6C939 solid;
+                background-color: rgb(37, 36, 36);
+                color: #E6C939;
+                text-align: center;
+                font-family: geotica-w01-four-open;
+                font-size: 110%;
+                top: 291pt;
+                line-height: 20px;
+                
+            }
+
+            body {
+                background-image: url("https://thumbs.dreamstime.com/b/wooden-background-wood-plank-texture-wooden-background-wood-plank-texture-vector-illustration-109485187.jpg");
+                background-attachment: fixed;
+                background-repeat:no-repeat ;
+                background-size: cover;
+                
+            }
+
+            .haut_titre_lien{
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+
+            .haut {
+                margin: 0;
+                padding: 0;
+                background-image: url("https://i.imgur.com/Eyy2Ce3.png" );
+                text-align: center;
+                height: 389px;
+                
+
+            }
+            .hautexte {
+                position: relative;
+                top: 80px;
+                margin: 0 auto;
+                width: 500px;
+                height: 100px;
+                border-color: #E6C939;
+                border-width: 10px 10px 15px 10px;
+                border-style: double;
+ 
+            }
+
+            .lien {
+                float: left;
+                padding-top: 100px;
+            }
+
+            .barrenavigation {
+                padding-top: 220px;
+                text-decoration: none;
+            }
+
+
+        
+            .barrenavigation {
+                padding-top: 220px;
+                text-decoration: none;               
+            }
+
+
+            .barre_navigation {
+                border: 3px #E6C939 solid;
+                overflow: hidden;
+                top: 0;
+                background-color: rgb(37, 36, 36);
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: fit-content;
+                font-family: geotica-w01-four-open;
+                font-size: 110%;
+                
+
+            }
+
+            
+
+
+            .barre_navigation a {
+                color: #E6C939;
+                text-align: center;
+                padding: 80px;
+            }
+
+            .barre_navigation a:hover {
+                color: rgb(53, 53, 53);
+                background-color: gray;
+            }
+
+            .barre_navigation a.active {
+                color: white;
+            }
+            
+
+            .log_in{
+                float: right;
+                color: #E6C939;
+                display: flex;            
+            }
+
+            
+            .barre_navigation a:hover + .dropdown1{               
+                display: block;
+                
+            }
+            .barre_navigation a {
+                color: #e6c939;
+                text-align: center;
+                padding: 80px;
+                
+            }
+            .barre_navigation .Textedropdown1 a{
+                padding: 0px;
+                
+            }
+                
+            .hoverdropdown1:hover .dropdown1{
+                display: block;  
+                              
+            }
+
+
+
+
+
+            
+           
+            .bas_de_page {
+                border-top: 5px #E6C939 solid;
+                background-color: rgb(37, 37, 37);
+                height: 300px;
+            }
+
+            .Textedropdown1{
+                background-color: rgb(37, 36, 36);
+                padding-left: 65px;
+                padding-right: 65px;
+                margin: 0px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                list-style-type: none;
+                
+            }
+
+            .Textedropdown1:hover{
+                
+                padding-left: 65px;
+                padding-right: 65px;
+                margin: 0px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                list-style-type: none;
+                color: rgb(53, 53, 53);
+                background-color: gray;
+            }
+
+
+            .millieu{
+                
+                max-width: 920px;
+                min-height: 100vh;
+                background-color: white;
+                margin: 0 auto;
+                margin-top: 2px;
+            }
+
+            .barre-gazette{
+                word-spacing: 28px;
+                width: 900px;
+                
+                letter-spacing: 1px;
+                margin: 0 auto;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                
+            }
+
+            .liengazette{
+                font-family: geotica;
+                font-size: 16px;
+                color: black;
+                text-decoration: none;
+                fill: black;
+            }
+            .TexteGazette{
+                max-width: 900px;
+                border: 1px rgb(243, 243, 243) solid;
+                margin: 0 auto;
+                min-height: 90vh;
+            }
+            
+            .info{
+                margin-top: 70px;
+                margin-left: 100px;
+                display: flex;
+            }
+            .trois_point{
+                float: right;
+                margin-top: 70px;
+                margin-right: 100px;
+            }
+
+            .photo_profile{
+                border-radius: 50%;
+                max-width: 35px;
+                min-height: auto;
+            }
+
+            .auteur{
+                margin-left: 17px;
+                margin-top: 5px;
+            }
+
+            .Information_supplementaire{
+                margin-top: 7px;
+                margin-left: 17px;
+            }
+
+            .Titre_Gazette{
+                letter-spacing: 5px;
+                font-size: 30px;
+                font-family: 'Open Sans', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                text-shadow: 3px 3px darkgray;
+                margin-top: 50px;
+            }
+
+            .Gazette80{
+                margin-left: 100px;
+            }
+
+            .Liengazette80{
+                padding-bottom: 60px;
+                padding-left: 40px;
+                padding-top: 25px;
+                list-style: none;
+            }
+            
+            .ItemLiengazette80{
+                font-family: geotica-w01-four-open;
+                letter-spacing: 1px;
+                line-height: 30px;
+                font-size: 20px;
+                color: rgb(0, 157, 255);
+            }
+
+            .paragrapheGazette{
+                padding-top: 50px;
+                padding-right: 100px;
+                font-size: 21.5px;
+            }
+
+            .ImageGazette{
+                text-align: center;
+                margin-right: 100px;
+                margin-top: 50px;
+            }
+            .Barre{
+                padding-right: 100px;
+                margin: 0 auto;
+                height: 2px;
+                width: 600px;
+                background-color: rgb(214, 214, 214) ;
+            }
+
+            .lienreseaux{
+                display: flex;
+                
+                margin-left: 120px;
+            }
+
+            .Itemlienreseaux2{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 11px;
+                margin-right: 11px;
+            }
+
+            .Itemlienreseaux{
+                fill: black;
+            }
+
+            .Itemlienreseaux:hover{
+                fill: rgb(77, 77, 255);
+            }
+
+            .Infosup{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                color: rgb(134, 134, 134);
+                display: flex;
+            }
+            .vue54{
+                padding-left: 100px;
+            }
+            .commentaire0{
+                padding-left: 20px;
+            }
+
+            .like2{
+                margin-left: auto;
+                fill: red;
+            }
+            .like1{
+                display: flex;
+                margin-right: 100px;
+                margin-left: auto;
+            }
+
+            .Gazette_En_bas{
+                margin-top: 100px;
+                display: flex;
+                
+            }
+
+            .ItemGazette{
+                
+                margin: 3%;
+                width: 250px;
+                height: 250px;
+                border: 1px rgba(223, 223, 223, 0.972) solid;
+            }
+
+            .TitreGazettebas{
+                padding-bottom: 30px;
+                padding-left: 20px;
+                padding-top: 20px;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px rgb(212, 212, 212);
+            }
+
+            .barreGazetteBas{
+                
+                display: flex; 
+                height: 1px;
+                width: 200px;
+                margin: 0 auto;
+                background-color: rgb(182, 182, 182);
+            }
+
+            .footer{
+                padding-top: 5px;
+                display: flex; 
+            }
+            .vue{
+                margin-left: 10px;
+            }
+
+            .vuetexte{
+
+                font-size: 15px;
+                margin-right: 30px;
+                margin-left: 5px;
+            }
+
+            .commentairetexte{
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                margin-right: 20px;
+                margin-left: 5px;
+            }
+
+            .commentairetexte :hover{
+                color: rgb(57, 57, 136);
+            }
+
+            .like{
+                margin-left: 95px;
+                fill: rgb(221, 2, 2);
+            }
+
+            .commentaireajouter{
+
+                margin: 0 auto;
+                width: 860px;
+                height: 200px;
+                border: 1px rgba(223, 223, 223, 0.972) solid;
+            }
+
+            .Barre2{
+                margin-left: 100px;
+                height: 1px;
+                width: 500px;
+                background-color: rgba(223, 223, 223, 0.972);
+            }
+
+            .commentera{
+                margin-top: 30px;
+                margin-left: 100px;
+                display: flex;
+                
+            }
+
+            .ajouteruncommentaire{
+                margin-left: 10px;
+                height: 40px;
+                width: 500px;
+                border: 1px rgba(179, 179, 179, 0.972) solid;
+                
+            }
+
+            .ajouteruncommentaire:hover{
+                margin-left: 10px;
+                height: 40px;
+                width: 500px;
+                border: 1px rgba(67, 134, 241, 0.972) solid
+            }
+
+            .bas_de_page {
+                border-top: 5px #E6C939 solid;
+                background-color: rgb(37, 37, 37);
+                height: 300px;
+            }
+    </style>
+    <div class="haut">
+        <div class="haut_titre_lien">
+            <div class="lien">
+                <a href="https://www.facebook.com/LaTaverneMinecraft" target="_blank" style="margin: 2px;">
+                    <img src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/e316f544f9094143b9eac01f1f19e697.webp" alt="facebook">
+                </a>
+                <a href="https://twitter.com/LaTaverneMc" target="_blank" style="margin: 5px;">
+                    <img src="https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/9c4b521dd2404cd5a05ed6115f3a0dc8.webp" alt="twitter">
+                </a>
+                <a href="https://lataverneminecraft.wixsite.com/site/devenir-membre" target="_blank" >
+                    <img src="https://static.wixstatic.com/media/1762b3_5540c7ee544842fba9c82aa7bb7c488d~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01/Icone_carr%C3%83%C2%A9e_200x200.webp" alt="Taverne">
+                </a>
+            </div>
+
+            <div class="log_in">
+                <img src="https://i.imgur.com/pFri1tr.png" alt="imagelogin" style="margin: 10px; padding-top: 70px;">
+                <a href="https://lataverneminecraft.wixsite.com/site/devenir-membre"><h4 style="padding-top: 88px; color: #E6C939">Log In</h4></a>
+            </div>
+
+            <div class="hautexte">
+                <h5 style="                
+                color: black;
+                font-family: geotica-w01-four-open;
+                text-align:center;
+                font-size:50px;
+                letter-spacing: 4px;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #E6C939; ">La Taverne</h5>
+                <h5 style="font-family:trend-sans-w00-four,sans-serif; 
+                
+                font-weight:400; 
+                font-size:20px;
+                color:#E6C939;-webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #E6C939;">SERVEUR MINECRAFT</h5>
+            </div>
+        </div>
+
+        <div class="barrenavigation">
+            <nav class="barre_navigation">
+                <li class="hoverdropdown1" style="display: block;">
+                    <a class="active" href="/Users/guillaumedebaty/Documents/site_lataverne/sitetaverne.html" style="text-decoration: none; ">Accueil</a>
+                    <div class="dropdown1"><nav><li class="Textedropdown1"><a href="/Users/guillaumedebaty/Documents/site_lataverne/page_gazette.html" style="text-decoration: none;">Gazette</a></li><li class="Textedropdown1">Gallerie</li></nav></div>                        
+                </li>
+                <a href="#Serveur" style="text-decoration: none;">Serveur</a>
+                <a href="#Nous_Rejoindre" style="text-decoration: none;">Nous rejoindre</a>
+                <a href="#Votes" style="text-decoration: none;">Votes</a>
+                <a href="#Dones" style="text-decoration: none;">Dons</a>
+            </nav>
+            
+        </div>  
+        
+    </div>
+
+    <div class="millieu">
+        <div class="barre-gazette">
+            <nav>
+                <a class="liengazette" style="word-spacing: 1px;"href="">Tous les posts</a>
+                <a class="liengazette" href="">Actualité</a>
+                <a class="liengazette"href="">Spawn</a>
+                <a class="liengazette" href="">Design</a>
+                <a class="liengazette" href="">Règles</a>
+                <a class="liengazette" href="">Villes</a>
+                <a class="liengazette" href="">Votes</a>
+                <a class="liengazette" href="">Staff</a>
+                <a class="liengazette" class="Plus" href="">Plus </a>
+                <svg style="float:right; padding-right: 20px;" class="liengazette" width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg>
+                
+            
+            </nav>
+            
+        </div>
+        <div class="TexteGazette">
+            <div class="trois_point">
+                <a href=""><svg  xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
+                </a>
+            </div>
+            <div class="info">
+                
+                
+                <img class="photo_profile"src="https://static.wixstatic.com/media/1bf8c6_01e3acda7371428fbeb76aa311ed3a6b~mv2.png/v1/fit/w_64%2Ch_64%2Cal_c/file.png" alt="photo_profile">
+                <div class="auteur"><p><b>lataverneminecraf &#9813;</b></p></div>
+                <p class="Information_supplementaire"> il y a 2 jours . 4min</p>
+            </div>
+            <div class="Gazette80">
+                <h2 class="Titre_Gazette">GAZETTE N°80</h2>
+                <p style="font-size: 20px; padding-top: 50px;"><I>Un petit retard, dû au planning du staff, il est fort possible pour que l'on passe sur du une <br>gazette toutes les 2 semaines en fonction de la disponilité du rédacteur/rédactrice et des <br>nouveautés à vous communiquer.</I></p>
+                <h2 class="Titre_Gazette">SOMMAIRE</h2>
+                <nav class="Liengazette80">
+                    <li><a href="#Map_Noel" class="ItemLiengazette80">Ouverture de la map Noel </a></li>
+                    <li><a href="#Transition118" class="ItemLiengazette80">Transition 1.18</a></li>
+                    <li><a href="#Reunionpublique" class="ItemLiengazette80">Serveur créatif et structure serveur </a></li>
+                    <li><a href="#Recrutement" class="ItemLiengazette80">Réunion public ⚠ </a></li>
+                    <li><a href="#Votes" class="ItemLiengazette80">Un petit vote pour ... </a></li>
+                    <li><a href="#Iron" class="ItemLiengazette80">Remerciements pour Iron </a></li>
+                    <li><a href="#talent" class="ItemLiengazette80">Nos joueurs ont du talent  </a></li>
+                    <li><a href="#horoscope" class="ItemLiengazette80">Horoscope </a></li>
+                </nav>
+
+                <h1 class="sous_titre" id="Map_Noel">🎅 <mark style="background-color: rgb(209, 45, 45); color: white; text-shadow: 2px 2px darkgray; letter-spacing: 2px;"> OUVERTURE DE LA MAP NOËL </mark>❄</h1>  
+                <p class="paragrapheGazette">Depuis mercredi dernier, un évènement, non pas des moindres, à occuper nos reportaires. Piste de luges, quêtes en folis, et avec quelques coups de pelle, vous voilà tout beau et riche ! Riche de liste au père Noël.<br><br>
+
+
+                    Débloquez diverses récompenses, du costume aux items uniques en passant par des ressources plus courrantes qui ne se refusent jamais dans le grand calendrier de Noël.<br>
+                    
+                    Ouvertur de case tous les jours et pour 2 jours !</p>
+
+                <img style="padding-top: 50px;" src="https://static.wixstatic.com/media/1762b3_971b4936a28345a38146d076fe0ffea9~mv2.png/v1/fill/w_740,h_398,al_c,q_95/1762b3_971b4936a28345a38146d076fe0ffea9~mv2.webp" alt="Map_Noël">
+            
+                <h1 class="sous_titre" id="Transition118" style="margin-top: 35px;">🌱<mark style="background-color: rgb(88, 88, 88); color: rgb(84, 255, 84); text-shadow: 2px 2px darkgray; letter-spacing: 2px; ">  TRANSITION 1.18</mark>🗻</h1>  
+                <p class="paragrapheGazette">Le staff s'est réuni le weekend dernier est à la joie de vous annoncer que la transition s'effectuera le weekend du 18/19 décembre !<BR><br>
+
+
+                    Nous allons essayer un système de transition dit, dynamique, c'est-à-dire que le serveur sera ouvert rapidement mais nous ferons des copier coller en présence de joueurs ce qui peut impliquer des risques de lag lors des manoeuvres, des crashs dans le pire des cas. En plus de pouvoir rapidement jouer sur le serveur en diminuant le temps de fermeture, vous disposerez d'un mois à compter de la transition pour demander un transfert de structure.<br><br>
+                    
+                    Pourquoi cela ? C'est simple, nous allons mettre en parallèle les mondes survies anciens et nouveaux, ceux qui sont actuellement et les nouveaux mondes de la 1.18. Après un mois nous surpprimerons les anciens mondes qui ne seront plus que disponible en visite dans le serveur musée.</p>
+            
+                    <h1 class="sous_titre" id="Transition118" style="margin-top: 35px;">🖼 <mark style="background-color: rgb(255, 0, 200); color: rgb(145, 0, 158); text-shadow: 2px 2px darkgray; letter-spacing: 2px;">SERVEUR CRÉATIF ET STRUCTURE SERVEURS
+                    </mark>🎨</h1>  
+                    <p class="paragrapheGazette">Le monde créatif, initialement regroupé dans le serveur Event/Défi/Créatif va être séparé sur un autre serveur. Nous profitons de la mise à jour des serveurs pour faire un peu de neuf dans la base de données et malheureusement celle-ci n'est pas compatible avec la structure actuelle.<br><br>
+
+
+                        Sur ce nouveau serveur vous trouverez des plots plus grand et vierge mais pas d'inquiétude, l'ancien monde créatif est visible dans le musée et toutes les structures s'y trouvant peuvent, sur demande, être transférer sur votre plot dans le nouveau serveur créatif.<br><br>
+                        
+                        
+                        Prochainement des règles d'attribution de plots pourront être modifiées. Affaire à suivre.</p>
+
+                        <h1 class="sous_titre" id="Reunionpublique" style="margin-top: 35px;">📯 <mark style="background-color: rgb(255, 217, 0); color: rgb(0, 0, 0); text-shadow: 2px 2px darkgray; letter-spacing: 2px;">Réunion public </mark>🥁</h1>  
+                        <p class="paragrapheGazette">Le serveur sous cette forme existe depuis bientôt 2 ans, il est peut être temps d'apporter des moddifications ?<br>
+                            Les anciens la connaissent, les nouveaux les intriguennt, une réunion public, aura lieu vendredi 18 au soir ( heure précisée quelques jours avant ).
+                            Ces réunions ont pour but de faire le point, mettre le doigt sur ce qui ne fonctione pas ou qui au contraire font la splendeur du serveur. De partager vos idées et de découvrir celles des autres.<br><br>
+                            
+                            Les réunions publiques sont le coeur du serveur. C'est la première façon de contribuer et participer à la modélisation de votre serveur. Nous vous y attendons avec impatience !</p>
+            
+                        <div class="ImageGazette"><img src="https://static.wixstatic.com/media/1762b3_3770c4924ae942c684531d4f8f867c4d~mv2.png/v1/fill/w_360,h_217,al_c,q_95/1762b3_3770c4924ae942c684531d4f8f867c4d~mv2.webp" alt="Reunion" ></div>
+            
+                        <h1 class="sous_titre" id="Recrutement" style="margin-top: 35px;">👩‍⚖️ <mark style="background-color: rgb(253, 143, 0); color: rgb(255, 255, 255); text-shadow: 2px 2px darkgray; letter-spacing: 2px;">Recrutement </mark>👨‍🍳</h1>  
+                        <p class="paragrapheGazette">Petit rappel pour vous signaler que votre staff recrute, pour noel ou plus si affinités 😘<br>
+
+                            Plusieurs postes de disponible; animateur, artiste, builder, modérateur ou encore dev ou admin<br>
+                            
+                            Nous ne recherchons pas forcément de gros joueurs mais, des gens qui aiment ce qu'ils font. Créer pour les artistes, build pour les builders, organiser pour les animateurs, gérer et apporter son aide pour les modo ou encore participer à tout et trafique des configues en tant qu'admin !</p>
+            
+                            <h1 class="sous_titre" id="Votes" style="margin-top: 35px;">💌 <mark style="background-color: rgb(39, 43, 251); color: rgb(240, 232, 120); text-shadow: 2px 2px darkgray; letter-spacing: 2px;">Un petit vote pour vous un grand pas pour l'humanité ! </mark>🚀</h1>  
+                            <p class="paragrapheGazette">On l'a vu, le froid est bien en place et a gêlé nos votes avec pour des résultats pas très chaud ... entre du -3 et -9 places sur certain site.. on sait, la fin d'année entre acheter des cadeaux, réviser, un chocolat chaud, un exam, et décorer le sapin de Noël, trouver le temps de voter c'est compliqué..<br><br>
+
+                                Pensez à nous au ptit dej, au goûter ou encore 2 minutes à votre pause pipi (on ne juge pas les wcgamers) pour glisser quelques votes.<br><br>
+                                
+                                En parlant de vote, ...  ça mérite une section ..</p>
+
+                            <h1 class="sous_titre" id="Iron" style="margin-top: 35px;">👁‍🗨<mark style="background-color: rgb(158, 158, 158); color: rgb(255, 255, 255); text-shadow: 2px 2px darkgray; letter-spacing: 2px;"> Remerciements pour Ir0n </mark>👍</h1>  
+                            <p class="paragrapheGazette">Ir0n a répondu à l'appel de notre détresse et a réussit à nous sortir un super logiciel, avec une interface pratique pour la distribution de vote. C'est un peu notre renne de Noël qui sans lui, laissé le père Noël et sa hotte au garage. Merci Ir0n !  La distribution devrait se faire cette semaine pour le mois de novembre.<br><br>
+
+                                Nous avons également un Lutin'zazo qui travail sur le nouveau pl de vote fournis par grand lutin javee.
+                            </p>
+                            
+                            <h1 class="sous_titre" id="talent" style="margin-top: 35px;">🔧 <mark style="background-color: rgb(0, 170, 14); color: rgb(0, 0, 0); text-shadow: 2px 2px rgb(66, 66, 66); letter-spacing: 2px;">Nos joueurs ont du talent</mark></h1>  
+                            <p class="paragrapheGazette">Je pense qu'il est important d'encourager les joueurs qui souhaitent apprendre et évoluer leur compétence, mais encore plus quand ces derniers les mettent à la disposition du serveur. Aujourd'hui mention spécial  à Natertot, qui en plus d'avoir développé, il y a quelques semaines, le bot du S.A.V La Taverne, travail sur un projet un peu fou de retravailler notre site web (voir image ci-dessous).
+
+                            <img src="https://media.discordapp.net/attachments/854795291462729759/920731037036843068/unknown.png?width=1344&height=711" alt="Siteweb" style="width: 700px; height: auto; margin-top: 50px;">
+                            </p>
+                            
+                            <h1 class="sous_titre" id="horoscope" style="margin-top: 35px;">☮<mark style="background-color: rgb(182, 0, 152); color: rgb(255, 255, 255); text-shadow: 2px 2px darkgray; letter-spacing: 2px;"> Horoscope </mark>☯</h1>  
+                            <p class="paragrapheGazette">Le signe astro d'athoms :  Beaucoup de chance et de froid, gare aux chaussettes trouées et aux amis frileux.<br>
+
+                                <i>(promis, je te remets un vrai horoscope à la prochaine gazette que j'écris mdr)</i><br><br>
+                                
+                                Bon jeu à toutes et à tous , merci pour votre lecture !<br><br>
+                                
+                                
+                                <p style="font-size: 15px; margin-bottom: 230px;"><i>💢Une faute vue, un mp à fox 😉</i></p>
+                            </p>
+                            
+                    </div>
+                    <div class="Barre"></div>
+                    <div class="lienreseaux">
+                        <div class="Itemlienreseaux2"><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Flataverneminecraft.wixsite.com%252Fsite%252Fpost%252Fgazette-n-80&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_US" class="Itemlienreseaux"><svg xmlns="http://www.w3.org/2000/svg"  width="19" viewBox="0 0 19 19" role="img" class="_2KfuU blog-icon-fill"><path d="M8.08865986,17 L8.08865986,10.2073504 L5.7890625,10.2073504 L5.7890625,7.42194226 L8.08865986,7.42194226 L8.08865986,5.08269399 C8.08865986,3.38142605 9.46779813,2.00228778 11.1690661,2.00228778 L13.5731201,2.00228778 L13.5731201,4.50700008 L11.8528988,4.50700008 C11.3123209,4.50700008 10.874068,4.94525303 10.874068,5.48583089 L10.874068,7.42198102 L13.5299033,7.42198102 L13.1628515,10.2073892 L10.874068,10.2073892 L10.874068,17 L8.08865986,17 Z"></path></svg></a></div>
+                        <div class="Itemlienreseaux2"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flataverneminecraft.wixsite.com%2Fsite%2Fpost%2Fgazette-n-80" class="Itemlienreseaux"><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="_2KfuU blog-icon-fill"><path d="M18,4.65548179 C17.3664558,4.9413444 16.6940105,5.12876845 16.0053333,5.21143556 C16.7308774,4.76869949 17.2742158,4.07523994 17.5353333,3.25870539 C16.8519351,3.66952531 16.1046338,3.95967186 15.3253333,4.116758 C14.3449436,3.05903229 12.8270486,2.71461351 11.4952673,3.24769481 C10.1634861,3.78077611 9.28740204,5.08344943 9.28466667,6.53469742 C9.28603297,6.80525838 9.31643401,7.07486596 9.37533333,7.33876278 C6.57168283,7.1960128 3.95976248,5.85317869 2.19,3.64465676 C1.87608497,4.18262214 1.71160854,4.79663908 1.714,5.42164122 C1.61438697,6.56033644 2.09783469,7.6712643 2.99466667,8.36452045 C2.36720064,8.27274888 1.74900117,8.12475716 1.14733333,7.9222845 L1.14733333,7.96708243 C1.26738074,9.69877048 2.5327167,11.1265052 4.21866667,11.4326042 C3.96602896,11.5152522 3.7021383,11.5571156 3.43666667,11.55666 C3.23854288,11.557327 3.0409356,11.5361435 2.84733333,11.4934834 C3.31534048,12.9376046 4.63446966,13.9228162 6.134,13.9481801 C4.90488101,14.9328579 3.38271245,15.4661427 1.816,15.4609716 C1.5432586,15.4614617 1.27074516,15.4449665 1,15.411579 C4.05446938,17.394368 7.93290025,17.5303291 11.1152384,15.7661758 C14.2975765,14.0020226 16.2768505,10.6187983 16.2773333,6.94247342 C16.2773333,6.789701 16.266,6.63692858 16.266,6.4830075 C16.9469737,5.98359293 17.5342367,5.3646551 18,4.65548179 L18,4.65548179 Z"></path></svg></a></div>
+                        <div class="Itemlienreseaux2"><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Flataverneminecraft.wixsite.com%2Fsite%2Fpost%2Fgazette-n-80" class="Itemlienreseaux"><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="_2KfuU blog-icon-fill"><path d="M17,17 L13.89343,17 L13.89343,12.1275733 C13.89343,10.9651251 13.87218,9.47069458 12.2781416,9.47069458 C10.660379,9.47069458 10.4126568,10.7365137 10.4126568,12.0434478 L10.4126568,17 L7.30623235,17 L7.30623235,6.98060885 L10.2883591,6.98060885 L10.2883591,8.3495072 L10.3296946,8.3495072 C10.7445056,7.56190587 11.7585364,6.7312941 13.2709225,6.7312941 C16.418828,6.7312941 17,8.80643844 17,11.5041407 L17,17 Z M3.80289931,5.61098151 C2.80647978,5.61098151 2,4.80165627 2,3.80498046 C2,2.80903365 2.80647978,2 3.80289931,2 C4.79669898,2 5.60434314,2.80903365 5.60434314,3.80498046 C5.60434314,4.80165627 4.79669898,5.61098151 3.80289931,5.61098151 Z M2.24786773,17 L2.24786773,6.98060885 L5.35662096,6.98060885 L5.35662096,17 L2.24786773,17 Z"></path></svg></a></div>
+                        <div class="Itemlienreseaux2"><a href="" class="Itemlienreseaux"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" role="img" class="_2KfuU blog-icon-fill blog-button-hover-fill"><path d="M10.6000004,11.7622375 L14.2108923,11.7622375 C15.4561791,11.7622375 16.4656836,10.7527331 16.4656836,9.50744629 L16.4656836,9.50744629 L16.4656836,9.50744629 C16.4656836,8.26215946 15.4561791,7.25265503 14.2108923,7.25265503 L10.6000004,7.25265503 L10.6000004,5.84470702 L10.6000004,5.84470702 C10.6000004,5.73425007 10.6895434,5.64470702 10.8000004,5.64470702 L14.3209766,5.64470702 C16.4501961,5.64470702 18.1762695,7.37078048 18.1762695,9.5 C18.1762695,11.6292195 16.4501961,13.355293 14.3209766,13.355293 L10.8000004,13.355293 L10.8000004,13.355293 C10.6895434,13.355293 10.6000004,13.2657499 10.6000004,13.155293 L10.6000004,11.7622375 Z M8.39999962,7.25265503 L4.82047474,7.25265503 C3.57518792,7.25265503 2.56568348,8.26215946 2.56568348,9.50744629 L2.56568348,9.50744629 L2.56568348,9.50744629 C2.56568348,10.7527331 3.57518792,11.7622375 4.82047474,11.7622375 L8.39999962,11.7622375 L8.39999962,13.1578418 C8.39999962,13.2682987 8.31045657,13.3578418 8.19999962,13.3578418 L4.60784179,13.3578418 C2.4772146,13.3578418 0.75,11.6306272 0.75,9.5 C0.75,7.36937281 2.4772146,5.64215821 4.60784179,5.64215821 L8.19999962,5.64215821 L8.19999962,5.64215821 C8.31045657,5.64215821 8.39999962,5.73170126 8.39999962,5.84215821 L8.39999962,7.25265503 Z M6.66568358,8.69999981 L12.2656836,8.69999981 C12.3761405,8.69999981 12.4656836,8.78954286 12.4656836,8.89999981 L12.4656836,10.1499998 C12.4656836,10.2604567 12.3761405,10.3499998 12.2656836,10.3499998 L6.66568358,10.3499998 C6.55522663,10.3499998 6.46568358,10.2604567 6.46568358,10.1499998 L6.46568358,8.89999981 C6.46568358,8.78954286 6.55522663,8.69999981 6.66568358,8.69999981 Z" transform="rotate(-45 9.463 9.5)"></path></svg></a></div>
+                        
+                    </div>
+                    <div class="Barre"></div>
+                    <div class="Infosup">
+                        <p class="vue54">54 vues</p>
+                        <p class="commentaire0">0 commentaire</p>
+                        <div class="like1">
+                            <p>1</p>
+                            <svg class="like2" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg>
+                        </div>
+                        
+
+                    </div>
+        </div>
+
+        <div class="autre_Gazette">
+            <p style="float:left; margin-left: 30px; margin-top: 50px;">Post récents</p>
+            <a href="/Users/guillaumedebaty/Documents/site_lataverne/page_gazette.html"><p style="float:right; margin-right: 30px; margin-top: 50px;">Voir tout</p></a>
+        </div>
+        <div class="Gazette_En_bas">
+            <div class="ItemGazette">
+                <img src="https://static.wixstatic.com/media/1762b3_0043af4be783484e88ae1c024ebd324a~mv2.jpg/v1/fill/w_740,h_494,al_c,q_90/1762b3_0043af4be783484e88ae1c024ebd324a~mv2.webp" alt="Patron" style="width: 90%; height: auto;">
+                <h3 class="TitreGazettebas">GAZETTE N°79</h3>
+                <div class="barreGazetteBas"></div>
+                <div class="footer">
+                        
+                    <svg class="vue" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="32 vues" class="blog-post-homepage-description-fill"><title></title><path d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z"></path></svg>
+                    <p class="vuetexte">33</p>
+                    <div class="commentaire">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="0 commentaire" class="blog-post-homepage-description-fill blog-link-hover-fill"><title></title><path d="M9.5,13 L15,13 C15.5522847,13 16,12.5522847 16,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.5522847 3.44771525,13 4,13 L7,13 L7,15.5 L9.5,13 Z M15.0081158,13.973325 L10,13.973325 L7.42191625,16.5445317 C6.63661359,17.3277395 6,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2.89179693,13.973325 2,13.0706688 2,11.979044 L2,4.994281 C2,3.89287002 2.89339733,3 3.99188419,3 L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17,13.0804549 16.1066027,13.973325 15.0081158,13.973325 Z"></path></svg>
+                        </a>
+                    </div>
+                    <a class="commentairetexte" href=""><p>0</p></a>
+                    
+                    <svg class="like" style="float:right" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg>
+                </div>
+            </div>
+            
+            <div class="ItemGazette">
+                <img src="https://static.wixstatic.com/media/66325d_82921256726d451bbfa378d25ff3a4ea~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95/66325d_82921256726d451bbfa378d25ff3a4ea~mv2.webp" alt="Patron" style="width: 100%; height: auto;">
+                <h3 class="TitreGazettebas">GAZETTE N°79</h3>
+                <div class="barreGazetteBas"></div>
+                <div class="footer">
+                        
+                    <svg class="vue" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="32 vues" class="blog-post-homepage-description-fill"><title></title><path d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z"></path></svg>
+                    <p class="vuetexte">33</p>
+                    <div class="commentaire">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="0 commentaire" class="blog-post-homepage-description-fill blog-link-hover-fill"><title></title><path d="M9.5,13 L15,13 C15.5522847,13 16,12.5522847 16,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.5522847 3.44771525,13 4,13 L7,13 L7,15.5 L9.5,13 Z M15.0081158,13.973325 L10,13.973325 L7.42191625,16.5445317 C6.63661359,17.3277395 6,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2.89179693,13.973325 2,13.0706688 2,11.979044 L2,4.994281 C2,3.89287002 2.89339733,3 3.99188419,3 L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17,13.0804549 16.1066027,13.973325 15.0081158,13.973325 Z"></path></svg>
+                        </a>
+                    </div>
+                    <a class="commentairetexte" href=""><p>0</p></a>
+                    
+                    <svg class="like" style="float:right" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg>
+                </div>
+            </div>
+
+            <div class="ItemGazette">
+                <img src="https://static.wixstatic.com/media/66325d_40036a6c269643bd9ab6766f2ecad41f~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95/66325d_40036a6c269643bd9ab6766f2ecad41f~mv2.webp" alt="Patron" style="width: 100%; height: auto;">
+                <h3 class="TitreGazettebas">GAZETTE N°79</h3>
+                <div class="barreGazetteBas"></div>
+                <div class="footer">
+                        
+                    <svg class="vue" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="32 vues" class="blog-post-homepage-description-fill"><title></title><path d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z"></path></svg>
+                    <p class="vuetexte">33</p>
+                    <div class="commentaire">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" aria-label="0 commentaire" class="blog-post-homepage-description-fill blog-link-hover-fill"><title></title><path d="M9.5,13 L15,13 C15.5522847,13 16,12.5522847 16,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.5522847 3.44771525,13 4,13 L7,13 L7,15.5 L9.5,13 Z M15.0081158,13.973325 L10,13.973325 L7.42191625,16.5445317 C6.63661359,17.3277395 6,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2.89179693,13.973325 2,13.0706688 2,11.979044 L2,4.994281 C2,3.89287002 2.89339733,3 3.99188419,3 L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17,13.0804549 16.1066027,13.973325 15.0081158,13.973325 Z"></path></svg>
+                        </a>
+                    </div>
+                    <a class="commentairetexte" href=""><p>0</p></a>
+                    
+                    <svg class="like" style="float:right" xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg>
+                </div>
+            </div>
+        </div>
+        <div class="commentaireajouter">
+            <h3 style="padding-left: 100px; padding-top: 30px; padding-bottom: 10px;">COMMENTAIRES</h3>
+            <div class="Barre2"></div>
+            <div class="commentera">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60;" xml:space="preserve" height="36" width="36" class="s3PoA5"><g><ellipse fill="#979797" cx="30.7" cy="22.3" rx="11.5" ry="11.6"></ellipse><g><ellipse fill="none" cx="30.7" cy="22.3" rx="11.5" ry="11.6"></ellipse><path fill="#979797" d="M29.9,37.1c-9,0-17,3.9-21.4,10.1c-0.5,0.7-1,1.4-1.4,2.1c0.5,0.7,1.1,1.3,1.7,1.9c1,1,2.1,2,3.3,2.8
+                    c5,3.7,11.2,6,17.9,6s12.9-2.2,17.9-6c1.2-0.9,2.2-1.8,3.3-2.8c0.3-0.3,0.6-0.6,0.9-0.9c-0.4-0.7-0.8-1.4-1.3-2.1
+                    C46.3,41.6,38.6,37.1,29.9,37.1z"></path><path fill="#D8D8D8" d="M30,0C13.4,0,0,13.4,0,30c0,0.5,0,1,0,1.5c0,0.2,0,0.3,0,0.5c0,0.3,0,0.7,0.1,1c0,0.2,0,0.4,0.1,0.6
+                    c0,0.3,0.1,0.6,0.1,0.9c0,0.2,0.1,0.4,0.1,0.6c0,0.3,0.1,0.6,0.1,0.8c0,0.2,0.1,0.4,0.1,0.6c0.1,0.3,0.1,0.5,0.2,0.8
+                    c0,0.2,0.1,0.4,0.1,0.6c0.1,0.3,0.2,0.6,0.2,0.8c0.1,0.2,0.1,0.4,0.2,0.5c0.1,0.3,0.2,0.6,0.3,0.9c0.1,0.1,0.1,0.3,0.2,0.4
+                    c0.2,0.4,0.3,0.8,0.5,1.2c0,0,0,0,0,0c0.2,0.4,0.4,0.8,0.6,1.3c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.3,0.3,0.6,0.4,0.8
+                    c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.2,0.3,0.5,0.4,0.7c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.2,0.3,0.5,0.4,0.7c0.1,0.2,0.2,0.3,0.3,0.5
+                    c0.2,0.2,0.3,0.4,0.5,0.7C5.9,47.8,6,48,6.1,48.1c0.2,0.2,0.3,0.4,0.5,0.7c0.1,0.1,0.2,0.3,0.3,0.4c0,0,0.1,0.1,0.1,0.1
+                    c0.4-0.7,0.9-1.4,1.4-2.1c4.5-6.2,12.4-10.1,21.4-10.1c8.8,0,16.5,4.5,20.9,11.1c0.5,0.7,0.9,1.4,1.3,2.1c0,0,0,0,0.1-0.1
+                    c0.1-0.1,0.3-0.3,0.4-0.4c0.2-0.2,0.4-0.4,0.5-0.6c0.1-0.2,0.3-0.3,0.4-0.5c0.2-0.2,0.3-0.4,0.5-0.6c0.1-0.2,0.2-0.3,0.4-0.5
+                    c0.2-0.2,0.3-0.4,0.5-0.6c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.2,0.3-0.4,0.4-0.7c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.2,0.3-0.4,0.4-0.7
+                    c0.1-0.2,0.2-0.4,0.3-0.6c0.1-0.2,0.2-0.5,0.4-0.7c0.1-0.2,0.2-0.4,0.3-0.6c0.1-0.2,0.2-0.5,0.3-0.7c0.1-0.2,0.2-0.4,0.3-0.6
+                    c0.1-0.2,0.2-0.5,0.3-0.7c0.1-0.2,0.2-0.4,0.2-0.6c0.1-0.2,0.2-0.5,0.3-0.7c0.1-0.2,0.1-0.4,0.2-0.6c0.1-0.3,0.1-0.5,0.2-0.8
+                    c0.1-0.2,0.1-0.4,0.2-0.6c0.1-0.3,0.1-0.5,0.2-0.8c0-0.2,0.1-0.4,0.1-0.6c0.1-0.3,0.1-0.5,0.1-0.8c0-0.2,0.1-0.4,0.1-0.6
+                    c0-0.3,0.1-0.6,0.1-0.9c0-0.2,0.1-0.4,0.1-0.6c0-0.3,0.1-0.7,0.1-1c0-0.2,0-0.3,0-0.5c0-0.5,0-1,0-1.5C60,13.4,46.6,0,30,0z
+                     M30.7,33.9c-6.4,0-11.5-5.2-11.5-11.6c0-6.4,5.2-11.6,11.5-11.6s11.5,5.2,11.5,11.6C42.3,28.7,37.1,33.9,30.7,33.9z"></path></g></g></svg>
+                <input class="ajouteruncommentaire"></input>
+            </div>
+            
+        </div>
+        <div style="height: 30px;"></div>
+        
+    </div>
+    <div class="bas_de_page" style="text-align: center; color: white;">
+        <p ><br><br>Une erreur d'écriture? Contactez le staff et<br> remportez un diamant par erreur.</p>
+        <img  src="https://static.wixstatic.com/media/1762b3_dab39c4c136c40f9895c9eb8d4ae540a~mv2.png/v1/fill/w_89,h_74,al_c,q_85,usm_0.66_1.00_0.01/Diamond.webp" alt="diamant">
+    </div>
+</body>
+</html>
